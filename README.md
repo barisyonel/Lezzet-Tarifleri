@@ -14,6 +14,4 @@ Lezzet Tarifleri, dünya mutfaklarından farklı yemek tariflerini keşfetmenize
 ![Ana Sayfa](public/screenshots/homepage.png)  
 ![Kategori Sayfası](public/screenshots/categories.png)  
 
-## 📦 Kurulum ve Çalıştırma  
-Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip edebilirsiniz:  
 
