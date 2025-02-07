@@ -18,7 +18,7 @@ const CategoryDetail = () => {
 
   return (
     <div className={styles.container}>
-      <h1>{category} Yemekleri</h1>
+      <h1>{category} Food</h1>
       <div className={styles.mealGrid}>
         {meals.map((meal) => (
           <Link key={meal.idMeal} href={`/recipe/${meal.idMeal}`}>
