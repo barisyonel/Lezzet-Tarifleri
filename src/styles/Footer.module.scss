@@ -1,0 +1,83 @@
+.footer {
+	background: #ff9900;
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	left: 0;
+  }
+  
+  .footerContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+  }
+  
+  .footerContainer .left,
+  .footerContainer .right {
+	flex: 1;
+  }
+  
+  .footerContainer .center {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .footerContainer .center ul {
+	list-style: none;
+	display: flex;
+	gap: 15px;
+	padding: 0;
+  }
+  
+  .footerContainer .center ul li a {
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+	font-weight: 500;
+  }
+  
+  .footerContainer .center ul li a:hover {
+	color: #ff9800;
+  }
+  
+  .socialIcons {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+  }
+  
+  .socialIcons a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: white;
+	transition: 0.3s;
+  }
+  
+  .socialIcons a:hover {
+	color: #ff9800;
+  }
+  
+  /* Mobil Uyumlu */
+  @media (max-width: 768px) {
+	.footerContainer {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	.footerContainer .center ul {
+	  flex-direction: column;
+	  gap: 5px;
+	}
+  
+	.socialIcons {
+	  margin-top: 10px;
+	}
+  }
+  

@@ -1,0 +1,77 @@
+.filterContainer {
+	text-align: center;
+	margin-bottom: 20px;
+  
+	label {
+	  font-size: 1.2rem;
+	  font-weight: bold;
+	}
+  
+	.gridContainer {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	  gap: 10px;
+	  margin-top: 10px;
+	  justify-items: center;
+	}
+  
+	.categoryButton {
+	  padding: 10px 15px;
+	  font-size: 1rem;
+	  background: #ff6f61;
+	  color: white;
+	  border: none;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  transition: 0.3s;
+	}
+  
+	.categoryButton:hover {
+	  background: #e65b50;
+	}
+  
+	.selected {
+	  background: #d84315 !important;
+	}
+  }
+  .categoryGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+  }
+  
+  .categoryCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+	cursor: pointer;
+	text-align: center;
+  }
+  
+  .categoryCard:hover {
+	transform: scale(1.05);
+	background: #ffebeb;
+  }
+  
+  .categoryImage {
+	border-radius: 50%;
+	margin-bottom: 10px;
+  }
+  
+  .categoryDescription {
+	font-size: 0.9rem;
+	color: #555;
+	margin-top: 5px;
+  }
+  
+  .selected {
+	border: 2px solid #ff6f61;
+	background: #ffebeb;
+  }
+  

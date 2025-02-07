@@ -1,0 +1,70 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #ff9800;
+	padding: 15px 20px;
+	color: white;
+	font-size: 1.2rem;
+	position: relative;
+	z-index: 1000; // Navbar'ın her şeyin üzerinde olmasını sağla
+}
+
+.logo a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navLinks {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.navLinks li a {
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+
+.navLinks li a:hover {
+	color: #ffd700;
+}
+
+/* Mobil Uyumluluk */
+.menuButton {
+	display: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.menuButton {
+		display: block;
+	}
+
+	.navLinks {
+		position: fixed;
+		top: 35px;
+		left: 0;
+		width: 100%;
+		height: 35%; 
+		flex-direction: column;
+		background: rgba(255, 152, 0, 0.95); // Hafif saydam arka plan
+		text-align: center;
+		padding: 15px;
+		display: none;
+		justify-content: center; // Menü elemanlarını ortalar
+		align-items: center;
+		z-index: 9999; // Menü en üstte olur
+	}
+
+	.navLinks.showMenu {
+		display: flex;
+	}
+
+	.navLinks li {
+		padding: 10px;
+	}
+}

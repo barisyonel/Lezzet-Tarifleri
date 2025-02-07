@@ -1,0 +1,22 @@
+.animatedButton {
+	display: inline-block;
+	padding: 12px 20px;
+	font-size: 1rem;
+	font-weight: bold;
+	background: #ff9800;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .animatedButton:hover {
+	background: #e68900;
+	transform: translateY(-3px);
+  }
+  
+  .animatedButton:active {
+	transform: translateY(0);
+  }
+  
